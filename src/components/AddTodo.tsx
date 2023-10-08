@@ -23,7 +23,8 @@ const AddTodo = () => {
       />
       <button
         type="submit"
-        className="w-40 rounded border-0 bg-indigo-500 py-2 text-lg text-white hover:bg-indigo-600 focus:outline-none lg:px-6"
+        className="w-40 rounded border-0 bg-indigo-500 py-2 text-lg text-white focus:outline-none hover:enabled:bg-indigo-600 lg:px-6"
+        disabled={input === "" ? true : false}
       >
         Add Todo
       </button>
